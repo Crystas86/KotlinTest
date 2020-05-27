@@ -32,14 +32,16 @@ class MyAdapter (val arrayList: ArrayList<Model>, val context: Context ) :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bindItems(arrayList[position])
+        val data = arrayList[position]
+        holder.bindItems(data)
 
         holder.itemView.setOnClickListener {
 
             // create intent in kotlin
-            val intent = Intent(context, MainActivity::class.java).apply {
-                putExtra("Afghanistan", arrayList)
-                putExtra("Albania", arrayList)
+            val intent = Intent(context, AnotherActivity::class.java).apply {
+                putExtra("iTitle", data.title)
+                putExtra("iDescription", data.des)
+                putExtra("iImageView", data.image)
             }
             // start another activity
             context.startActivity(intent)

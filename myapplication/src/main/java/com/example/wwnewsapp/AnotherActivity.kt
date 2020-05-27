@@ -20,5 +20,8 @@ class AnotherActivity : AppCompatActivity() {
         val aDescription = intent.getStringExtra("iDescription")
         val aImageView = intent.getIntExtra("iImageView", 0)
 
+        image.setImageResource(aImageView)
+        currentTitle.text = aTitle
+        des.text = aDescription
     }
 }
