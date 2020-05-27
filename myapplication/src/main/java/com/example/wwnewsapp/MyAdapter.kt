@@ -38,11 +38,7 @@ class MyAdapter (val arrayList: ArrayList<Model>, val context: Context ) :
         holder.itemView.setOnClickListener {
 
             // create intent in kotlin
-            val intent = Intent(context, AnotherActivity::class.java).apply {
-                putExtra("iTitle", data.title)
-                putExtra("iDescription", data.des)
-                putExtra("iImageView", data.image)
-            }
+            val intent = Intent(context, data.clazz)
             // start another activity
             context.startActivity(intent)
         }

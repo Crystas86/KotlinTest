@@ -13,13 +13,13 @@ class Albania : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        arrayList.add(Model("Afghanistan", "This is Afghanistan description", R.drawable.afghanistan))
-        arrayList.add(Model("Albania", "This is Albania description", R.drawable.albania))
-        arrayList.add(Model("Algeria", "This is Algeria description", R.drawable.algeria))
-        displayList.addAll(arrayList)
-
-        val actionBar: ActionBar? = supportActionBar
-        actionBar!!.setDisplayHomeAsUpEnabled(true)
-        actionBar!!.setDisplayShowHomeEnabled(true)
+//        arrayList.add(Model("Afghanistan", "This is Afghanistan description", R.drawable.afghanistan))
+//        arrayList.add(Model("Albania", "This is Albania description", R.drawable.albania))
+//        arrayList.add(Model("Algeria", "This is Algeria description", R.drawable.algeria))
+//        displayList.addAll(arrayList)
+//
+//        val actionBar: ActionBar? = supportActionBar
+//        actionBar!!.setDisplayHomeAsUpEnabled(true)
+//        actionBar!!.setDisplayShowHomeEnabled(true)
     }
 }

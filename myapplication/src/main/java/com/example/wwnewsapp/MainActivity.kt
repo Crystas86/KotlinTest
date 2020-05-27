@@ -28,9 +28,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        arrayList.add(Model("Afghanistan", "This is Afghanistan description", R.drawable.afghanistan))
-        arrayList.add(Model("Albania", "This is Albania description", R.drawable.albania))
-        arrayList.add(Model("Algeria", "This is Algeria description", R.drawable.algeria))
+        arrayList.add(Model("Afghanistan", "This is Afghanistan description", R.drawable.afghanistan, Afghanistan::class.java))
+        arrayList.add(Model("Albania", "This is Albania description", R.drawable.albania, Albania::class.java))
         displayList.addAll(arrayList)
 
         myAdapter = MyAdapter(displayList, this)

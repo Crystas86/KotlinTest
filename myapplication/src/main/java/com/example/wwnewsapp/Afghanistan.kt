@@ -18,10 +18,9 @@ class Afghanistan : AppCompatActivity() {
         actionBar!!.setDisplayShowHomeEnabled(true)
 
 
-        arrayList2.add(Model("Afghanistan", "This is Afghanistan description", R.drawable.afghanistan))
-        arrayList2.add(Model("Albania", "This is Albania description", R.drawable.albania))
-        arrayList2.add(Model("Algeria", "This is Algeria description", R.drawable.algeria))
-        displayList.addAll(arrayList2)
+//        arrayList2.add(Model("Afghanistan", "This is Afghanistan description", R.drawable.afghanistan))
+//        arrayList2.add(Model("Albania", "This is Albania description", R.drawable.albania))
+//        displayList.addAll(arrayList2)
 
     }
 }
